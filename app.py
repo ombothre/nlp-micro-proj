@@ -1,6 +1,9 @@
-import streamlit as st
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import streamlit as st
 import torch
+import warnings
+
+warnings.filterwarnings("ignore")
 
 # Load the model and tokenizer from Hugging Face
 tokenizer = AutoTokenizer.from_pretrained("Om1024/racist-bert")
